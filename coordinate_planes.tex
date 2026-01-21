@@ -1,0 +1,433 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb}
+
+% defining example env
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+%
+%defining the solution env
+\newtheorem*{solution}{Solution}
+%
+\usepackage{graphicx}
+\title{Co-ordinate planes and Straight lines}
+\begin{document}
+\maketitle
+
+\section*{Co-ordinate axes and co-ordinate planes}
+We have three mutually perpendicular planes $\text{XOY, YOZ and  ZOX}$ meeting at a point $\text{O}$. These planes are called \emph{co-ordinate planes}. \\\\
+The lines of intersection of thes three planes taken in pairs are $\text{X'OX, Y'OY and Z'OZ}$, they are also mutually perpendicular, and are called \emph{co-ordinate axes}. \\
+$\text{X'OX}$ is called x-axis.
+$\text{Y'OY}$ is called y-axis.
+$\text{Z'OZ}$ is called z-axis.
+
+\section*{Distance between two points}
+The distance between two points $\text{P}(x_{1},y_{1},z_{1})$ and $\text{Q}(x_{2},y_{2},z_{2})$ is given by \[
+\text{PQ} = \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2} + (z_{2}-z_{1})^{2}}
+\] 
+\section*{Section Formula}
+\subsection{Internal}
+The co-ordinates of a point R which divides the lines joining the points $\text{P}(x_{1},y_{1},z_{1})$ and $\text{Q}(x_{2},y_{2},z_{2})$ in the ratio $m_{1}:m_{2}$ is \[
+\text{R}(x_{i},y_{i},z_{i}) = \left( \frac{m_{1}x_{2} + m_{2}x_{1}}{m_{1}+m_{2}}, \frac{m_{1}y_{2}+m_{2}y_{1}}{m_{1}+m_{2}}, \frac{m_{1}z_{2}+m_{2}z_{1}}{m_{1}+m_{2}} \right)
+\] 
+
+\subsection{External}
+\[
+\text{R}(x_{i},y_{i},z_{i}) = \left( \frac{m_{1}x_{2} - m_{2}x_{1}}{m_{1}-m_{2}}, \frac{m_{1}y_{2}-m_{2}y_{1}}{m_{1}-m_{2}}, \frac{m_{1}z_{2}-m_{2}z_{1}}{m_{1}-m_{2}} \right)
+\]
+\setcounter{subsection}{0}
+\subsection*{Note}
+When the question asks to find the ratio, then let the ration equal to $\lambda$ so the required ratio would be $\lambda:1$ and considering two variables would not be necessay (i.e.  $m_{1}:m_{2}$)
+
+\section*{Direction cosines of a line}
+The direction cosines of a line are the cosines of the angle made by the line with the positive direction of the co-ordinate axes, thus if a line makes an angle $\alpha$ with x-axis, $\beta$ with y-axis and $\gamma$ with z-axis then $\cos{\alpha}$, $\cos{\beta}$ and $\cos{\gamma}$ are the respective \emph{direction cosines}.
+\\
+The direction cosines of a line are usually denoted by $\text{l, m, n}$ so that, \\
+$l=\cos{\alpha}$  $m=\cos{\beta}$ $n=\cos{\gamma}$ \\
+The direction cosides of x-axis are $(1,0,0)$ \\
+The direction cosides of y-axis are $(0,1,0)$ \\
+The direction cosides of z-axis are $(0,0,1)$ \\
+
+\subsection*{Relation between direction cosines}
+ \[
+l^{2}+m^{2}+n^{2} = 1
+.\] 
+
+\section*{Direction Ratios of a line}
+Any set of three numbers which are proportional to the direction cosines of a line are called direction rations of that line. \\
+Thus is $\text{(a, b, c)}$ be the direction ratios of a line then $\frac{l}{a} = \frac{m}{b} = \frac{n}{c}$ where  $\text{l, m, n}$ are the direction cosined of the line. \\
+The direction cosines of a line are unique whereas, a line may have $\infty$ number of direction ratios. \\
+We have  
+\[
+\frac{l}{m}=\frac{m}{b}=\frac{n}{c} = \frac{\pm\sqrt{l^{2}+m^{2}+n^{2}}}{\sqrt{a^{2}+b^{2}+c^{2}}} = \frac{\pm 1}{\sqrt{a^{2}+b^{2}+c^{2}}}
+\]
+\[
+\implies \frac{l}{a} = \frac{\pm 1}{\sqrt{a^{2}+b^{2}+c^{2}}} \implies l = \frac{\pm a}{\sqrt{a^{2}+b^{2}+c^{2}}}
+\]
+\[
+\implies \frac{l}{a} = \frac{\pm 1}{\sqrt{a^{2}+b^{2}+c^{2}}} \implies l = \frac{\pm a}{\sqrt{a^{2}+b^{2}+c^{2}}}
+\]
+\[
+\implies \frac{l}{a} = \frac{\pm 1}{\sqrt{a^{2}+b^{2}+c^{2}}} \implies l = \frac{\pm a}{\sqrt{a^{2}+b^{2}+c^{2}}}
+\]
+\section*{Direction cosines of a line joining two points}
+The direction cosines of a line joining $\text{P}(x_{1},y_{1},z_{1})$ and $\text{Q}(x_{2},y_{2},z_{2})$ is \[
+	\left[ \frac{x_{2}-x_{1}}{\text{PQ}} , \frac{y_{2}- y_{1}}{\text{PQ}}, \frac{z_{2}-z_{1}}{\text{PQ}} \right]
+\] where
+\[
+	\text{PQ} = \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}+(z_{2}-z_{1})^{2}}
+\]
+
+\section*{Projection of a line segment}
+Let $\text{AB}$ be a line segment and $\text{RS}$ be any given line. \\
+Drop a perpendicular from $\text{A}$ and $\text{B}$ on $\text{RS}$ and let $\text{L}$ and $\text{M}$ be the feet of these perpendiculars, then we define LM to be the projection of $\overline{\text{AB}}$ and $\overline{\text{RS}}$. \\
+If $\overline{\text{AB}}$ makes and angle $\theta$ with $\overline{\text{RS}}$ then $\overline{\text{LM}}=\text{AB}\cos\theta$ \\
+\subsection*{Projection of line joining two points on a given line}
+The projection of the line segemts joining two points P and Q on a line with direction cosines l, m and n is \\ 
+\[
+	(x_{2}-x_{1})l + (y_{2}-y_{1})m + (z_{2}-z_{1})n
+\]
+\section*{Angle between two lines}
+The angle between two lines whose direction cosines are $(l_{1}, m_{1}, n_{1})$ and $(l_{2},m_{2},n_{2})$ respectively is $\cos\theta = l_{1}l_{2}+m_{1}m_{2}+n_{1}n_{2}$
+\subsection*{Note}
+
+\begin{enumerate}
+	\item The given lines will be perpendicular if 
+		\[ l_{1}l_{2}+m_{1}m_{2}+n_{1}n_{2} \]
+	\item The given lines will be parallel if 
+		\[ \frac{l_{1}}{l_{2}} = \frac{m_{1}}{m_{2}} = \frac{n_{1}}{n_{2}} \]
+	\item If $(a_{1}, b_{1},c_{1})$ and $(a_{2},b_{2},c_{2})$ are the direction ratio of the two given stratight lines then these lines will be, 
+		\begin{enumerate}
+			\item Perpendicular if $a_{1}a_{2}+b_{1}b_{2}+c_{1}c_{2} = 0$
+			\item Parallel if \[
+					\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}} = \frac{c_{1}}{c_{2}} = 0
+			.\] 
+		\end{enumerate}
+\end{enumerate}
+
+\section*{Plane}
+A plane is a surface such that the straight line joining any two points on the surface lies wholly on the surface. \\
+The equation of a plane of first degree in $x, y, z$ is  $\boxed{ax+by+cz+d = 0}$ where  $a, b, c $ are direction ratios of the normal of the plane
+
+\section*{Equation of plane}
+\subsection{Normal form} 
+The equation of a plane, thie perpendicular on which from the origin is of length $p$ and makes angle  $\alpha, \beta \text{and} \gamma$ with the co-ordinate axes, is given by \[\boxed{lx+my+nz=p}\]
+This is the normal form of the equation of the plane.
+\subsection{Intercept form}
+The equation of a plane which cuts inctercept of length $a, b, c$ on the co-ordinate axes will be \[
+	\frac{x}{a} = \frac{y}{b} = \frac{z}{c} = 1
+\]
+\subsection{Plane through three non-collinear points}
+The equation of plane passing through three non-collinear points $(x_{1},y_{1},z_{1})$ , $(x_{2},y_{2},z_{2})$ and $(x_{3},y_{3},z_{3})$ will be \[
+	\boxed{}
+\]
+\subsection*{Note}
+The condition that the four points $(x_{1},y_{1},z_{1}),(x_{2},y_{2,z_{2}}),(x_{3},y_{3,z_{3}}) \text{and} (x_{4},y_{4},z_{4})$ are co-planar is
+
+\section*{Angle between two planes}
+Angle between two planes is equal to the angle between the normal of them from any point. \\
+If $\theta$ be the angle between the normals of the planes $a_{1}x+b_{1}y+c_{1}z+d_{1} = 0$ and
+$a_{2}x+b_{2}y+c_{2}z + d_{2} = 0$ 
+is given by \[
+	\cos\theta = \dfrac{a_{1}a_{2} + b_{1}b_{2} + c_{1}c_{2}}{\sqrt{a_{1} ^{2}+b_{1} ^{2}+c_{1} ^{2}}\sqrt{a_{2} ^{2} + b_{2} ^{2} + c_{2} ^{2} }}
+.\]
+where $a_{1},b_{1},c_{1}$ are direction ratios of first plane and likewise for $a_{2},b_{2},c_{2}$.\\
+These planes will be
+\begin{enumerate}
+	\item Parallel if
+		\[
+			\frac{a_{1}}{a_{2}}=\frac{b_{1}}{b_{2}}=\frac{c_{1}}{c_{2}}
+		\]
+	\item Perpendicular if \[
+	a_{1}a_{2}+b_{1}b_{2}+c_{1}c_{2} = 0
+	\]
+\end{enumerate}
+\section*{Distance of a point from a given plane}
+Let the given plane be $ax+by+cz+d=0$ \newline
+Further let $\text{P}(x',y',z')$ be the point not on the plane, then the distance of $\text{P}(x',y',z')$ from the given plane will be
+\[
+	s = \dfrac{ax'+by'+cz'+d}{\sqrt{a^{2}+b^{2}+c^{2}}}
+.\]
+\subsection*{Note}
+The distance of origin from plane ax+by+cz+d = 0 is \[
+	\dfrac{d}{\sqrt{a^{2}+b^{2}+c^{2}}} \tag*{(Put x=y=z=0)}
+.\]
+\section*{Plane through line of intersection of two given planes}
+Let the two planes be \newline
+$U \rightarrow a_{1}x+b_{1}y+c_{1}z+d_{1}=0$ \newline
+$V \rightarrow a_{2}x+b_{2}y+c_{2}z+d_{2}=0$ \newline \newline
+Then the equation of plane through the line of intersection of the given planes will be
+\[
+	\boxed{U+\lambda V} = 0
+.\]
+where $\lambda$ is any arbitrary constant.
+\begin{example}
+	Find the intercepts made by the plane $2x+3y-12z-12 =0$ on the co-ordinate axes. Also find the direction cosines of the normal to the given plane.
+$\frac{2x}{12}+ \frac{3y}{12} -\frac{12z}{12} = \frac{12}{12}$
+\end{example}
+\begin{solution}
+	The given equation of the plane can be written as, \[\frac{2x}{12}+ \frac{3y}{12} -\frac{12z}{12} = \frac{12}{12}\]
+	\[
+	\frac{x}{6}+ \frac{y}{4}+ \frac{z}{-1} = 1
+	.\]
+	which is the intercept form, thus the intercepts are $6, 4 \text{ and } (-1)$.
+	The direction ratios of the normal to the given plane are  $ \text{}(2, 3, -1)$\\
+	The direciton cosines of the normal are 
+	\[ \frac{2}{\sqrt{2^{2}+3^{2}+ (-12)^{2}}} = \frac{2}{\sqrt{4+9+144}}= \frac{2}{\sqrt{157}} \]
+	\[ \text{direction cosines} = \left( \frac{2}{\sqrt{157}} ,\frac{3}{\sqrt{157}}, \frac{12}{\sqrt{157}}\right) \] 
+\end{solution}
+\begin{example}
+	Find the equation of the plane passing through the line of intersection fo planes $U=2x-y =0$ and $V=3z-y=0$ and that this new plane is perpendicular to the plane S where $S = 4x+5y-3z=8$
+\end{example}
+\begin{solution}
+	The equation of plane throught the line of intersection of planes U and V is $ U = \lambda V$ where $\lambda$ is an arbitrary constant.\\
+Let 
+	\begin{align}
+		S = 4x+5y-3z = 8
+	\end{align}
+	\begin{align*}
+		(2x-y) + \lambda(3z-y) = 0 \\
+		2x -y + 3z\lambda -y\lambda = 0 \\
+		2x -(1+\lambda)y + 3z\lambda + 0d = 0 \tag{2}
+	\end{align*}
+	Given that plane in eqation(2) is perpendicular to plane S,//
+	the condition for which is
+	\begin{align*}
+		a_{1}a_{2}+b_{1}b_{2}+c_{1}c_{2} = 0
+		\intertext{substituting the coefficients of respective eqations (1) and (2)}
+		4\times2+(-1-\lambda)5+3\lambda(-3) = 0 \\
+		3-14\lambda = 0 \\
+		\lambda = \frac{3}{14}
+	\end{align*}
+	so the required equation is \boxed{$28x - 11y + 9z = 0$}
+\end{solution}
+\begin{example}
+	Find the plane through the line of intersectio of plane $ U = x+y+z = 0$ and $V=2x+3y+4z+5 = 0$ and perpendicular to the plane S, where $S = 4x+5y-3z = 8$
+\end{example}
+\begin{solution}
+	
+\end{solution}
+
+\begin{example}
+	A variable plane remains at a constant distance '$p$' from the origin and meeth the co-ordinate axes at A,B,C. Show that
+	\begin{enumerate}
+		\item The locus of centroid of triangle ABC is $\frac{1}{x^{2}}+ \frac{1}{y^{2}}+ \frac{1}{z^{2}} = \frac{9}{p^{2}}$
+		\item The locus of centroid of the tetrahedron OABC is $\frac{1}{x^{2}}+ \frac{1}{y^{2}}+ \frac{1}{z^{2}} = \frac{16}{p^{2}}$ 
+	\end{enumerate}
+\end{example}
+
+\begin{solution}{\ \newline}
+\begin{enumerate}
+	
+\item Let the variable plane be, \[
+		\frac{x}{a}+\frac{y}{b}+ \frac{z}{c} = 1 \tag{1}
+	\]
+	on comparing with the standard equation of plane $Ax + By + Cz+ D = 0$, \\
+	This plane is at distance $p$ from origin, so we have,
+	\begin{align*}
+		p &= \frac{-D}{\sqrt{A^2 + B^2 + C^2}} \\
+		\intertext{where A, B and C are coefficients of x, y and z in standard equation of plane and D is the constant term} \\
+		p &= \frac{-(1)}{\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}} \\
+		\implies \frac{1}{p^2} &= \frac{1}{a^2} + \frac{1}{b^2} + \frac{1}{c^2} \tag{2}
+	\end{align*}
+	Since the plane in equation(1) meets the co-ordinate axes at A, B and C such that \newline
+	$ \text{A}(a, 0, 0), \text{B}(0, b, 0) \text{ and } \text{C}(0, 0, c)$ \newline \newline
+	Let the centroid of $\triangle ABC$ be  $ \text{}(\alpha, \beta, \gamma)$ \newline
+	$\implies \alpha = \frac{a}{3}, \beta= \frac{b}{3}, \gamma = \frac{c}{3}$ \\
+	\[
+		\boxed{\text{Centroid}(\triangle ABC) = \left(\frac{a}{3}, \frac{b}{3}, \frac{c}{3}\right)}
+	.\]
+	Also, $a = 3\alpha, b = 3\beta, c = 3\gamma$ \\\\
+	Substituting in equation(2)\\\\
+	\begin{align*}
+		\frac{1}{p^2} &= \frac{1}{9\alpha^2} + \frac{1}{9\beta} + \frac{1}{9\gamma} \\
+	\frac{9}{p^2} &= \frac{1}{\alpha^2}+\frac{1}{\beta^2} + \frac{1}{\gamma^2} \\
+	\intertext{Thus, the locus of centroid of $\triangle ABC$ is}
+	\frac{9}{p^2} &= \frac{1}{x^2} + \frac{1}{y^2} + \frac{1}{z^2}
+	\end{align*}
+\item Let $\alpha, \beta, \gamma$ be the centroid of tetrahedron 'OABC', then,
+	\begin{align*}
+		\alpha = \frac{a}{4} \implies a = 4\alpha \\
+		\beta = \frac{b}{4} \implies b = 4\beta \\
+		\gamma = \frac{c}{4} \implies c = 4\gamma \\
+		\intertext{substituting a, b, c in equation(2)} \\
+		\frac{1}{p^2} &= \frac{1}{16\alpha^2} + \frac{1}{16\beta^2} + \frac{1}{16\gamma^2} \\
+		\frac{16}{p^2} &= \frac{1}{\alpha^2}+ \frac{1}{\beta^2}+ \frac{1}{\gamma^2} \\
+		\intertext{Thus, the locus of centroid of tetrahedron OABC is} \\
+		\frac{16}{p^2} &= \frac{1}{x^2}+ \frac{1}{y^2}+ \frac{1}{z^2}
+	\end{align*}
+\end{enumerate}
+\end{solution}
+\subsection*{Note:}
+The condition that the equation \[
+ax^2+by^2+xz^2+2fy+2gzx+2hxy
+.\] may represent a pair of plains is \[
+\begin{vmatrix}
+	a & h & g \\
+	h & b & f \\
+	g & f & c 
+\end{vmatrix} = 0
+.\]
+
+\begin{example}
+	Proof that the equation $2x^2-6y^2-12z^2+18yz+2zx+xy = 0$ represents a pair of plains.
+\end{example}
+\begin{solution}
+\begin{align*}
+	\intertext{On comparing}
+	2x^2 -6y^2 -12z^2 + 18yz + 2zx + xy &= 0
+	\intertext{with}
+	ax^2 +by^2 + cz^2 + 2fyz + 2gzx + 2hxy &=0
+	\intertext{we have}
+	a = 2  , f = 9 \\
+	b = -6 , g = 1 \\
+	c = -12, h = \frac{1}{2}
+	\intertext{Now, if}
+	\begin{vmatrix}
+	a & h & g \\
+	h & b & f \\
+	g & f & c 
+	\end{vmatrix} = 0, 
+	\intertext{then the given equation may represent a pair of plains}
+	\intertext{So,}
+	\begin{vmatrix}
+		2 & 1/2 & 1 \\
+		1/2 & -6 & 9 \\
+		1 & 9 & -12
+	\end{vmatrix} &= 2(72-81) -\frac{1}{2}(-6-9) + 1(4.5+6) \\
+					       &= 18+7.5+10.5 = 0 \\
+	\tag*{Q.E.D}
+\end{align*}
+\end{solution}
+\begin{example}
+	Proof that \[
+	\frac{3}{(y-z)}+\frac{4}{(z-x)}+ \frac{5}{(x-y)} = 0
+	.\] is an equation of a pair of planes
+\end{example}
+\begin{solution}
+	
+\end{solution}
+
+\section*{Straight lines}
+The general equaiton of the straight line are of two form 
+\begin{enumerate}
+	\item \textbf{Non-symmetrical form:}
+		Let us consider two planes 
+	\begin{align*}
+		a_{1}x+b_{1}y + c_{1}z +d_{1} = 0 \tag{1}\\
+		a_{2}x+b_{2}y + c_{2}z +d_{2} = 0 \tag{2}
+	\end{align*}
+	If these planes are not parallel, then they must intersect along a straight line. \newline
+	This form is known as non-symmetrical form of equation of plane.
+	\item \textbf{Symmetrical form:} To find the equation of straight line passing through point $\text{}(\alpha, \beta, \gamma)$ and having direction cosines $\text{}(l, m, n)$. \newline
+		Let AB be the line passing through the point $\text{}(\alpha, \beta, \gamma)$ and the direction cosines be $\text{}(l, m, n)$. \newline
+		further let $\text{P}(x, y, z)$ be any arbitrary point on the line AB then, the direction cosines of AP are \[
+		\frac{x-\alpha}{r}, \frac{y-\beta}{r}, \frac{z-\gamma}{r}
+		.\] where AP = r \newline
+		Since direction cosines are unique 
+		\begin{align*}
+			l = \frac{x-\alpha}{r} \\
+			m = \frac{y - \beta}{r} \\
+			n = \frac{z - \gamma}{r} 
+		\end{align*}
+		$\therefore$ we have, 
+		\begin{align*}
+			\boxed{\frac{x-\alpha}{l} =  \frac{y - \beta}{m} = \frac{z - \gamma}{n} = r}
+		\end{align*}
+The above equation is called the symmetrical form of the line.
+\end{enumerate}
+\section*{Equation of line through two points}
+	Let the straight the passing through two points A and B then the direction ratios of the line AB, $\text{}((\alpha' - \alpha), (\beta' - \beta), (\gamma' - \gamma))$ for $\text{A}(\alpha, \beta, \gamma)$ and $\text{B}(\alpha', \beta', \gamma')$ \newline
+	then the equation of line will be 
+	\[
+		\boxed{\frac{x-\alpha}{\alpha'-\alpha} = \frac{y -\beta}{\beta'-\beta} = \frac{z-\gamma}{\gamma'-\gamma}}
+	.\]
+\subsection*{Note}
+The equation of x, y and z axes of the symmetrical form is 
+\begin{align*}
+	\intertext{For x-axis}
+	\frac{x}{1}=\frac{y}{0}=\frac{z}{0}
+	\intertext{For y-axis}
+	\frac{x}{0}= \frac{y}{1}= \frac{z}{0}
+	\intertext{For z-axis}
+	\frac{x}{0}= \frac{y}{0}= \frac{z}{1}
+\end{align*}
+\hrule
+\subsection*{Note}
+Vector equation of the plane passing through two given points $A(\vec{a})$ and $B(\vec{b})$ and parallel to $\vec{c}$ is \newline
+\[
+	\boxed{\vec{r} = (1-t)\vec{a}+t\vec{b} + s\vec{c}}
+\]
+\begin{example}
+	Find the equation of a plane passing through the point $(\hat{i}+2\hat{j}-\hat{k})$ which is perpendicular to the line of intersection fo the planes $\vec{r}(3\hat{i}-\hat{j}+\hat{k}) = 1$ and $\vec{r}(\hat{i}+4\hat{j}-2\hat{k}) = 2$
+\end{example}
+\begin{solution}
+	Since the line of intersection of the given planes lies on both the planes and it is perpendicular to the normals of the given two planes, hence the line of intersection is parallel to the vector
+
+\begin{align*}
+	(3\hat{i}-\hat{j}+\hat{k})\times(\hat{i}+4\hat{j}-2\hat{k}) = \vec{n} \\
+	\begin{vmatrix}
+		\hat{i} & \hat{j} & \hat{k} \\
+		3 & -1 & 1 \\
+		1 & 4 & -2 
+	\end{vmatrix} = \vec{n}
+	\vec{n}&=\hat{i}(2-4) -\hat{j}(-6-1) + \hat{k}(12+1) \\
+	\vec{n}=(-2\hat{i}+7\hat{j}+13\hat{k})
+	\intertext{The equation of the required plane passing through $\vec{a}=\hat{i}2\hat{j}-k\hat{k}$ and perpendicular to $\vec{n}=-2\hat{i}+7\hat{j}+13\hat{k}$ is}
+	(\vec{r}-\vec{a}).\vec{n} &= 0 \\
+	\vec{r}.\vec{n}-\vec{a}.\vec{n} &= 0 \\
+	\vec{r}.\vec{n} &= \vec{a}.\vec{n} \\
+	\vec{r}.(-2\hat{i}+7\hat{j}+13\hat{k}) &= -2+14-13 \\
+	\vec{r}.(-2\hat{i}+7\hat{j}+13\hat{k}) &= -1 
+	\intertext{The above equation is the required equation of plane.}
+\end{align*}
+\end{solution}
+
+\subsection*{Shortest distance between two straight linew}
+The two straight lines are said to be skew lines if they are not co-planar or in other words two non-intersecting or non parallel lines are said to be skew lines. If a line intersect two skew lines the intercept will be shortest if the line is perpendicular to both the skew lines. 
+\begin{example}
+	Find the shortest distance between the line $\frac{x-3}{3}= \frac{y-8}{1}= \frac{2-3}{1} = r_{1}$ and $\frac{x+3}{3}= \frac{y-7}{2}= \frac{z-6}{4}=r_{2}$. Also find the point of intersection of the given lines.
+\end{example}
+\begin{solution}
+	Let the shortest distance line meets the first line at the point $\text{L}(3r_{1}+3,-r_{1}+8, r_{1}+3)$ second line at point $\text{M}(-3r_{2}-3, 2r_{2}-7, 4r_{2}+6)$. \newline
+	Now, the line LM has direction ratios as:
+	\begin{align*}	
+	&(-3r_{2}-3-3r_{1}-3, 2r_{2}-7+r_{1}-8, 4r_{2}+6) \\
+		\text{i.e.} &(-3r_{1}-3r_{2}-6, r_{1}+2r_{1}-15, -3r_{1}+4r_{2}+3) \\
+	\intertext{Now, the line LM is perpendicular to first and second line. So,}
+		     &3(-3r_{1}-3r_{2}-6)-1(r_{1}+2r_{2}-15)+(r_{1}+4r_{2}+3)=0 and \\
+		     &-3(-3r_{1}-3r_{2}-6)+2(r_{1}+2r_{2}-15)+4(r_{1}+4r_{2}+3)=0 \\
+		     \text{On solving } r_{1}=r_{2}=0
+	\intertext{So the co-ordinate of L and M are $\text{L}(3, 8, 3), \text{M}(-3, -7, 6)$}
+	\text{Sortest distance} = \sqrt{(-3-3)^2+(-3-8)^2 + (6-3)^2} = 3 \sqrt{30} \\
+	\intertext{Equation fo the shortest distance line passing through L}
+	\frac{x-3}{-2}= \frac{y-8}{-15}= \frac{z-3}{3} \\
+	\text{i.e.} \frac{x-3}{-2}= \frac{y-8}{-5}= \frac{z-3}{1}
+	\end{align*}
+\end{solution}
+\begin{example}
+	Find the shortest distance between the lines $\frac{x-3}{1}  = \frac{y-5}{-2}=\frac{2-7}{7}$ and $\frac{x+1}{7}= \frac{y+1}{-6}= \frac{z+1}{1}$ and also find its equation.
+\end{example}
+\section*{Straight line}
+\subsection*{Vector equation of a straight line}
+The vector equation of a straight line passing through a given point $\text{A}(\vec{a})$ and parallel to $\vec{b}$ is \[
+\vec{r} = \vec{a}+t \vec{b}
+.\]
+\subsubsection*{Note}
+The vector equation passing through origin and $\int$ \[
+\vec{r}=t \vec{b}
+.\]
+\subsection*{Line through two given points $\int$}
+The vector equation of a straight line passing through two points $\text{A}(\vec{a})$ and $\text{B}(\vec{b})$ is
+\[
+\boxed{\vec{r} = (1-t)\vec{a}+t \vec{b}}
+\] 
+\subsection*{Line of intersection of two planes}
+Let the equation of two planes be 
+\begin{align*}
+	\vec{r}.\vec{n_{1}} &= q_{1} \\
+	\vec{r}.\vec{n_{2}} &= q_{2} 
+	\intertext{then the equation of line of intersection is}
+	\vec{r}\times(\vec{n_{1}}\times \vec{n_{2}})&=q_{2}(\vec{n_{1}})-q_{1}(\vec{n_{2}})
+\end{align*}
+\end{document}
